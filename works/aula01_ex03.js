@@ -31,13 +31,12 @@ var planeMaterial = new THREE.MeshBasicMaterial({
 var plane = new THREE.Mesh(planeGeometry, planeMaterial);
 scene.add(plane);
 
-// create cubes
+// create cube
 var cubeGeometry = new THREE.BoxGeometry(4, 4, 4);
 var cubeMaterial = new THREE.MeshNormalMaterial();
 var cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
 
 // cubes positions
-cube.position.set(0.0, 0.0, 2.0);
 var gapSize = 6;
 for (let i = 0; i < 3; i++) {
   for (let j = 0; j < 3; j++) {

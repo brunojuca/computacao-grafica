@@ -52,7 +52,7 @@ function ballUpdate()
     z+=dZ*speed
     sphere.position.set(x, y, z)
     console.log("moving");
-    if ( Math.abs(x - newX) < 0.1 && Math.abs(y - newY) < 0.1 && Math.abs(y - newY) < 0.1) moving = false;
+    if ( Math.abs(x - newX) < 0.1 && Math.abs(y - newY) < 0.1 && Math.abs(z - newZ) < 0.1) moving = false;
   }
 }
 
